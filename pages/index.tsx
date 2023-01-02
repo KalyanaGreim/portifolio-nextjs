@@ -51,7 +51,7 @@ export default function Home() {
             priority
           /> */}
           <div className={styles.thirteen}>
-            {/* <h1>Olá mundo, eu sou a Kaly</h1> */}
+            <h1>:)</h1>
 
             {/* <Image
               src="/thirteen.svg"
@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/about"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
