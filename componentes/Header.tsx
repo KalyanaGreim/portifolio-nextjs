@@ -8,6 +8,15 @@ export default function Header() {
         <CustomLink href="/about" prefetch>
           About
         </CustomLink>
+        <CustomLink href="/certificates" prefetch>
+          About
+        </CustomLink>
+        <CustomLink href="/projects" prefetch>
+          About
+        </CustomLink>
+        <CustomLink href="/contact" prefetch>
+          About
+        </CustomLink>
       </nav>
     </header>
   )
