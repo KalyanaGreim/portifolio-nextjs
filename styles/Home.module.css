@@ -91,7 +91,7 @@
 .center::after {
   background: var(--primary-glow);
   width: 240px;
-  height: 180px;
+  height: 120px;
   z-index: -1;
 }
 
@@ -104,7 +104,11 @@
   transform: translateZ(0);
 }
 
-.logo,
+.logo {
+  position: relative;
+  border-radius: 50%;
+  border: 3px black solid;
+}
 .thirteen {
   position: relative;
 }
@@ -248,7 +252,19 @@
     );
     z-index: 1;
   }
+
 }
+  .teste {
+    background-color: rgb(163, 163, 202);
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 4px;
+    width: 500px;
+    float: inline-start;
+    margin: 30px;
+    /* height: 1000px; */
+  }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
