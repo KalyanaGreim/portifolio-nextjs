@@ -254,16 +254,30 @@
   }
 
 }
-  .teste {
-    background-color: rgb(163, 163, 202);
-    border: 3px solid black;
+.list_cards {
+  display: flex;
+  justify-content: center;
+}
+  .cards {
+    background-color: rgb(252, 252, 255);
+    border: 3px solid rgb(165, 225, 243);
     border-radius: 10px;
     text-align: justify;
-    padding: 4px;
-    width: 500px;
+    padding: 10px;
+    width: 555px;
+    height: 650px;
     float: inline-start;
-    margin: 30px;
-    /* height: 1000px; */
+    margin: 15px;
+    list-style: none;
+  }
+  .title_job {
+    text-align: center;
+  }
+  .job{
+    list-style: none;
+    background-color: rgb(223, 250, 252);
+    border-radius: 5px;
+    padding: 5px;
   }
 
 /* Tablet and Smaller Desktop */
