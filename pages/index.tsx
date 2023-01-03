@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-        <h1 >Olá mundo, eu sou a Kaly</h1>
+        <h1 style={{float:'right'}}>Olá mundo, eu sou a Kaly</h1>
           {/* <Image
             className={styles.logo}
             src="/next.svg"
@@ -62,16 +62,15 @@ export default function Home() {
             /> */}
           </div>
         </div>
-
         <div className={styles.grid}>
           <a
             href="/about"
             className={styles.card}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+              About <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
@@ -85,7 +84,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            Graduation and certificates <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
@@ -99,7 +98,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+              Projects <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
@@ -113,7 +112,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+              Contact <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Instantly deploy your Next.js site to a shareable URL
