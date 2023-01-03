@@ -258,8 +258,8 @@
   min-height: 80vh;
   /* background-color: rgba(37, 35, 35, 0.514); */
   margin: 80px;
-  background-color: rgb(144, 202, 249);
-  border-radius: 0px 50px 0px 50px;
+  /* background-color: rgb(144, 202, 249);
+  border-radius: 0px 50px 0px 50px; */
   padding: 20px;
 
 }
@@ -271,14 +271,25 @@
 }
 .about_me {
   text-align: justify;
-  margin: 10px 30px 10px 30px;
+  margin: 15px 30px 15px 30px;
   font-style: oblique;
-    /* font-weight: bold; */
+  padding: 10px;
 }
 .list_cards {
   display: flex;
   justify-content: space-around;
   margin: 20px;
+}
+.contact {
+  min-height: 80vh;
+  margin: 80px;
+  justify-content: center;
+  
+}
+.title_contact {
+  border-bottom: 4px solid rgb(144, 202, 249);
+  font-family: cursive;
+  font-size: 35px;
 }
 
 /* Tablet and Smaller Desktop */
