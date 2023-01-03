@@ -107,7 +107,7 @@
 .logo {
   position: relative;
   border-radius: 50%;
-  border: 3px black solid;
+  border: 5px rgb(144, 202, 249) solid;
 }
 .thirteen {
   position: relative;
@@ -254,31 +254,32 @@
   }
 
 }
+.about {
+  min-height: 80vh;
+  /* background-color: rgba(37, 35, 35, 0.514); */
+  margin: 80px;
+  background-color: rgb(144, 202, 249);
+  border-radius: 0px 50px 0px 50px;
+  padding: 20px;
+
+}
+.title_about_me {
+  margin: 10px 30px 10px 30px;
+  border-bottom: 4px solid rgb(144, 202, 249);
+  font-family: cursive;
+  font-size: 35px;
+}
+.about_me {
+  text-align: justify;
+  margin: 10px 30px 10px 30px;
+  font-style: oblique;
+    /* font-weight: bold; */
+}
 .list_cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 20px;
 }
-  .cards {
-    background-color: rgb(252, 252, 255);
-    border: 3px solid rgb(165, 225, 243);
-    border-radius: 10px;
-    text-align: justify;
-    padding: 10px;
-    width: 555px;
-    height: 650px;
-    float: inline-start;
-    margin: 15px;
-    list-style: none;
-  }
-  .title_job {
-    text-align: center;
-  }
-  .job{
-    list-style: none;
-    background-color: rgb(223, 250, 252);
-    border-radius: 5px;
-    padding: 5px;
-  }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
