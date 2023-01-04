@@ -50,36 +50,20 @@ export default function Home() {
         </div>
         <div className={styles.center}>
         <h2 style={{float:'right'}}>Hello world, I'm Kaly</h2>
-          {/* <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          /> */}
           <div className={styles.thirteen}>
             <h1>:)</h1>
-
-            {/* <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            /> */}
           </div>
         </div>        
 
         <div className={styles.grid}>
           <a
-            href="/about"
+            href="/experience"
             className={styles.card}
             // target="_blank"
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              About <span>-&gt;</span>
+              Experience <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
