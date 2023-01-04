@@ -37,7 +37,7 @@ const About: React.FC = () => {
 
   return (
     <div className={styles.about}>
-      <p className={styles.title_about_me}>Sobre mim</p>
+      <p className={styles.title_about_me}>Experiência profissional</p>
       <div className={styles.about_me}>
         <p>
           Olá, agradeço por visitar meu portifólio e por se interessar em saber
