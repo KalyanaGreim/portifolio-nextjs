@@ -287,12 +287,14 @@
   justify-content: center;
   align-items: center;
 }
-.title_contact {
+.title_pages {
   border-bottom: 4px solid rgb(144, 202, 249);
   font-family: cursive;
   font-size: 35px;
   float: none;
   margin: 30px 30px 0px 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Tablet and Smaller Desktop */

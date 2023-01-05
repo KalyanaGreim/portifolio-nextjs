@@ -11,6 +11,7 @@ import { IconButton } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
+import { ArrowBack } from "@mui/icons-material";
 
 function createData(
   curso: string,
@@ -107,29 +108,34 @@ const rows = [
 const Certificates: React.FC = () => {
   return (
     <div>
-      <p className={styles.title_about_me}>Academic record</p>
+      <div className={styles.title_pages}>
+        <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
+          <ArrowBack />
+        </IconButton>
+        <p>Academic record</p>
+      </div>
       <div className={styles.div_container}>
-      <TableContainer component={Paper} className={styles.table_container}>
-        <Table
-          aria-label="collapsible table"
-          className={styles.div_certificates}
-        >
-          <TableHead>
-            <TableRow className={styles.table_head}>
-              <TableCell />
-              <TableCell>Curso</TableCell>
-              <TableCell align="right">Instituição</TableCell>
-              <TableCell align="right">Duração</TableCell>
-              <TableCell align="right">Término</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <Row key={row.curso} row={row} />
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+        <TableContainer component={Paper} className={styles.table_container}>
+          <Table
+            aria-label="collapsible table"
+            className={styles.div_certificates}
+          >
+            <TableHead>
+              <TableRow className={styles.table_head}>
+                <TableCell />
+                <TableCell>Curso</TableCell>
+                <TableCell align="right">Instituição</TableCell>
+                <TableCell align="right">Duração</TableCell>
+                <TableCell align="right">Término</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <Row key={row.curso} row={row} />
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </div>
     </div>
   );

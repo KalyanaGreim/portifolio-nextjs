@@ -1,9 +1,9 @@
 import {
+  ArrowBack,
   Email,
   GitHub,
   LinkedIn,
   Person,
-  Phone,
   Send,
 } from "@mui/icons-material";
 import React from "react";
@@ -13,19 +13,24 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import { ListItemButton } from "@mui/material";
+import { IconButton, ListItemButton } from "@mui/material";
 
 const Contact: React.FC = () => {
   return (
-    <div >
-      <p className={styles.title_contact}>Informações de contato</p>
+    <div>
+      <div className={styles.title_pages}>
+        <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
+          <ArrowBack />
+        </IconButton>
+        <p>Informações de contato </p>
+      </div>
       <div className={styles.contact}>
         <List
-          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper"}}
+          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
         >
           <ListItem>
             <ListItemAvatar>
-              <Avatar style={{backgroundColor: 'rgb(144, 202, 249)'}}>
+              <Avatar style={{ backgroundColor: "rgb(144, 202, 249)" }}>
                 <Person />
               </Avatar>
             </ListItemAvatar>
@@ -36,7 +41,7 @@ const Contact: React.FC = () => {
             target="_blank"
           >
             <ListItemAvatar>
-              <Avatar style={{backgroundColor: 'rgb(144, 202, 249)'}}>
+              <Avatar style={{ backgroundColor: "rgb(144, 202, 249)" }}>
                 <Send />
               </Avatar>
             </ListItemAvatar>
@@ -44,7 +49,7 @@ const Contact: React.FC = () => {
           </ListItemButton>
           <ListItemButton href="mailto:kalygreim11@gmail" target="_blank">
             <ListItemAvatar>
-              <Avatar style={{backgroundColor: 'rgb(144, 202, 249)'}}>
+              <Avatar style={{ backgroundColor: "rgb(144, 202, 249)" }}>
                 <Email />
               </Avatar>
             </ListItemAvatar>
@@ -55,7 +60,7 @@ const Contact: React.FC = () => {
             target="_blank"
           >
             <ListItemAvatar>
-              <Avatar style={{backgroundColor: 'rgb(144, 202, 249)'}}>
+              <Avatar style={{ backgroundColor: "rgb(144, 202, 249)" }}>
                 <LinkedIn />
               </Avatar>
             </ListItemAvatar>
@@ -69,7 +74,7 @@ const Contact: React.FC = () => {
             target="_blank"
           >
             <ListItemAvatar>
-              <Avatar style={{backgroundColor: 'rgb(144, 202, 249)'}}>
+              <Avatar style={{ backgroundColor: "rgb(144, 202, 249)" }}>
                 <GitHub />
               </Avatar>
             </ListItemAvatar>
