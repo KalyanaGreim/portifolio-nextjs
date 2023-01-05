@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import { blue } from "@mui/material/colors";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { ArrowBack } from "@mui/icons-material";
+import { ArrowBack, ChevronLeft } from "@mui/icons-material";
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -40,7 +40,7 @@ const About: React.FC = () => {
     <div>
       <div className={styles.title_pages}>
       <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
-          <ArrowBack />
+          <ChevronLeft />
         </IconButton> 
       <p>Experiência profissional</p>
       </div>

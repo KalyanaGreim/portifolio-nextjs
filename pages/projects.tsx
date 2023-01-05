@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import { Button, IconButton } from "@mui/material";
-import { ArrowBack } from "@mui/icons-material";
+import { ArrowBack, ChevronLeft } from "@mui/icons-material";
 
 const Projects: React.FC = () => {
   const data = [
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
     <section>
       <div className={styles.title_pages}>
         <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
-          <ArrowBack />
+          <ChevronLeft />
         </IconButton>
         <p>My Recent Projects</p>
       </div>

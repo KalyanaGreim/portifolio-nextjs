@@ -11,7 +11,7 @@ import { IconButton } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
-import { ArrowBack } from "@mui/icons-material";
+import { ArrowBack, ChevronLeft } from "@mui/icons-material";
 
 function createData(
   curso: string,
@@ -110,7 +110,7 @@ const Certificates: React.FC = () => {
     <div>
       <div className={styles.title_pages}>
         <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
-          <ArrowBack />
+          <ChevronLeft />
         </IconButton>
         <p>Academic record</p>
       </div>

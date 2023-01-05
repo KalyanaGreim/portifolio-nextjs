@@ -1,5 +1,6 @@
 import {
   ArrowBack,
+  ChevronLeft,
   Email,
   GitHub,
   LinkedIn,
@@ -20,7 +21,7 @@ const Contact: React.FC = () => {
     <div>
       <div className={styles.title_pages}>
         <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
-          <ArrowBack />
+          <ChevronLeft />
         </IconButton>
         <p>Informações de contato </p>
       </div>
