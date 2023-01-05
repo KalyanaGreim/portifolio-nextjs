@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
         <p style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)'}}>Backend Development</p>
         <p style={{margin: '0px 0px 30px 0px'}}>Java - SpringBoot - TDD - PostgreeSQL - MySQL - Docker - AWS(S3) </p>
         <div className={styles.grid}>
-          <a
+          <Link
             href="/experience"
             className={styles.card}
             // target="_blank"
@@ -73,9 +74,9 @@ export default function Home() {
               My trajectory in the IT area and my professional experience
               history.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/certificates"
             className={styles.card}
             // target="_blank"
@@ -87,9 +88,9 @@ export default function Home() {
             <p className={inter.className}>
               My main formations and what I'm studying now.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/projects"
             className={styles.card}
             // target="_blank"
@@ -101,9 +102,9 @@ export default function Home() {
             <p className={inter.className}>
               My recent projects in front-end and back-end.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="contact"
             className={styles.card}
             // target="_blank"
@@ -113,7 +114,7 @@ export default function Home() {
               Contact <span>-&gt;</span>
             </h2>
             <p className={inter.className}>My contact networks</p>
-          </a>
+          </Link>
         </div>
       </main>
     </>
