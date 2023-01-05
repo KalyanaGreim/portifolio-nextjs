@@ -367,5 +367,5 @@
 }
 .div_certificates {
   min-height: 70vh;
-  width: 80vh;
+  max-width: 120vh;
 }
