@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -49,11 +49,11 @@ export default function Home() {
           />
         </div>
         <div className={styles.center}>
-        <h2 style={{float:'right'}}>Hello world, I'm Kaly</h2>
+          <h2 style={{ float: "right" }}>Hello world, I'm Kaly</h2>
           <div className={styles.thirteen}>
             <h1>:)</h1>
           </div>
-        </div>        
+        </div>
 
         <div className={styles.grid}>
           <a
@@ -66,7 +66,8 @@ export default function Home() {
               Experience <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+              My trajectory in the IT area and my professional experience
+              history.
             </p>
           </a>
 
@@ -77,10 +78,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-            Graduation and certificates <span>-&gt;</span>
+              Graduation and certificates <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+              My main formations and what I'm studying now.
             </p>
           </a>
 
@@ -94,7 +95,7 @@ export default function Home() {
               Projects <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+              My recent projects in front-end and back-end.
             </p>
           </a>
 
@@ -107,13 +108,10 @@ export default function Home() {
             <h2 className={inter.className}>
               Contact <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
+            <p className={inter.className}>My contact networks</p>
           </a>
         </div>
       </main>
     </>
-  )
+  );
 }
