@@ -122,7 +122,7 @@ const Certificates: React.FC = () => {
           >
             <TableHead>
               <TableRow className={styles.table_head}>
-                <TableCell />
+                <TableCell>Detalhamento</TableCell>
                 <TableCell>Curso</TableCell>
                 <TableCell align="right">Instituição</TableCell>
                 <TableCell align="right">Duração</TableCell>
