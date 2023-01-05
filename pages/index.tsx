@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -15,30 +14,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {/* <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
+        <div className={styles.description}>
+        <a href="/cv.pdf" download className='btn'><p>
+            Download CV
+          </p></a>          
+          <div style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)', fontSize: 16}}>
+            {/* <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
+            > */}
+              FullStack Developer Jr
+              {/* <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
                 height={24}
                 priority
-              />
-            </a>
+              /> */}
+            {/* </a> */}
           </div>
-        </div> */}
-        <div className={styles.center}>
+        </div>
+        <div className={styles.center }>
           <Image
             className={styles.logo}
             src="/perfil_kaly.jpeg"
@@ -46,15 +44,20 @@ export default function Home() {
             width={220}
             height={220}
             priority
-          />
+          /> 
         </div>
         <div className={styles.center}>
-          <h2 style={{ float: "right" }}>Hello world, I'm Kaly</h2>
+          <h2>Hello world, I'm Kaly</h2> 
           <div className={styles.thirteen}>
             <h1>:)</h1>
-          </div>
+          </div>           
         </div>
-
+        <p style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)'}}>Frontend Development</p>
+          <p style={{margin: '0px 0px 15px 0px'}}>
+            HTML - CSS - Javascript - React - NextJs - Bootstrap - MaterialUi{" "}
+          </p>
+        <p style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)'}}>Backend Development</p>
+        <p style={{margin: '0px 0px 30px 0px'}}>Java - SpringBoot - TDD - PostgreeSQL - MySQL - Docker - AWS(S3) </p>
         <div className={styles.grid}>
           <a
             href="/experience"
