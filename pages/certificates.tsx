@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { styled } from "@mui/material/styles";
+import React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
@@ -11,9 +10,7 @@ import styles from "../styles/Home.module.css";
 import { IconButton } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import Box from "@mui/material/Box";
 import Collapse from "@mui/material/Collapse";
-import Typography from "@mui/material/Typography";
 
 function createData(
   curso: string,
@@ -55,27 +52,20 @@ function Row(props: { row: ReturnType<typeof createData> }) {
         <TableCell align="right">{row.formacao}</TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0, backgroundColor: 'rgb(248, 252, 255)' }} colSpan={6}>
+        <TableCell
+          style={{
+            paddingBottom: 0,
+            paddingTop: 0,
+            backgroundColor: "rgb(248, 252, 255)",
+          }}
+          colSpan={6}
+        >
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <p style={{backgroundColor: 'rgb(248, 252, 255)', padding: '10px'}}>{row.history}</p>
-            {/* <Box sx={{ margin: 1 }}>
-                <Typography variant="h6" gutterBottom component="div">
-                  History
-                </Typography>
-                <Table size="small" aria-label="purchases">
-                  <TableHead>
-                    <TableRow>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                      <TableRow key={row.name}>
-                        <TableCell component="th" scope="row">
-                          {row.history}
-                        </TableCell>
-                      </TableRow>
-                  </TableBody>
-                </Table>
-              </Box> */}
+            <p
+              style={{ backgroundColor: "rgb(248, 252, 255)", padding: "10px" }}
+            >
+              {row.history}
+            </p>
           </Collapse>
         </TableCell>
       </TableRow>
@@ -96,7 +86,8 @@ const rows = [
     "SENAI/ACATE",
     "9 meses",
     "06/2022",
-    " Desenvolvedor Fullstack - React e Java - 900h - Frontend React - 300h Fundamentos da programação WEB: HTML. CSS. Bootstrap. Javascript. Variáveis- Estrutura de controle de fluxo. Operadores Lógicos e Aritméticos. Funções. Manipulação do DOM. Interval e Timeout. ES6+. Arrow functions, export e import. Classes, promises. Async e await. Rest e spread, XHR, fetch. Framework React: Introdução. Renderização. Componentes. Props e Proptypes. Mocks. Router e Cross Origin.Hooks e Redirects.Rotinas DEV: Versionamento. Gitflow.Kanban board. - Backend Java - 300h • Java: Introdução. Estruturas. Conceitos de POO. Construtores. Modificadores. Encapsulamento. Sobrecarga. Listas. Herança. Polimorfismo. Tratamento de exceções. Servlet • Rotinas DEV: Metodologias Ágeis. Scrum • SQL: Introdução. DDL. DML. Spring Data, Hibertnate ou Jooq • Spring: Introdução. Spring Boot. Spring Core. Spring MVC. Spring Securit. - Fullstack - 300h • DevOps: Cloud. Escalabilidade. CI/CD. Containers. Docker • Mensageria: Introdução. Exchanges. Filas. Tópicos. Bidings. RabbitMQ • React: Biblioteca Redux • Rotinas DEV: Técnicas de priorização. Gestão de tempo. • Spring: CRUD rest API. Deploy. Logging. Debug • Testes: Introdução. TDD. Teste unitários React (Jest e RTL). Teste unitários Java (Junit)."),
+    " Desenvolvedor Fullstack - React e Java - 900h - Frontend React - 300h Fundamentos da programação WEB: HTML. CSS. Bootstrap. Javascript. Variáveis- Estrutura de controle de fluxo. Operadores Lógicos e Aritméticos. Funções. Manipulação do DOM. Interval e Timeout. ES6+. Arrow functions, export e import. Classes, promises. Async e await. Rest e spread, XHR, fetch. Framework React: Introdução. Renderização. Componentes. Props e Proptypes. Mocks. Router e Cross Origin.Hooks e Redirects.Rotinas DEV: Versionamento. Gitflow.Kanban board. - Backend Java - 300h • Java: Introdução. Estruturas. Conceitos de POO. Construtores. Modificadores. Encapsulamento. Sobrecarga. Listas. Herança. Polimorfismo. Tratamento de exceções. Servlet • Rotinas DEV: Metodologias Ágeis. Scrum • SQL: Introdução. DDL. DML. Spring Data, Hibertnate ou Jooq • Spring: Introdução. Spring Boot. Spring Core. Spring MVC. Spring Securit. - Fullstack - 300h • DevOps: Cloud. Escalabilidade. CI/CD. Containers. Docker • Mensageria: Introdução. Exchanges. Filas. Tópicos. Bidings. RabbitMQ • React: Biblioteca Redux • Rotinas DEV: Técnicas de priorização. Gestão de tempo. • Spring: CRUD rest API. Deploy. Logging. Debug • Testes: Introdução. TDD. Teste unitários React (Jest e RTL). Teste unitários Java (Junit)."
+  ),
   createData(
     "Bootcamp Programador Iniciante",
     "IGTI",
@@ -115,10 +106,14 @@ const rows = [
 
 const Certificates: React.FC = () => {
   return (
-    <body >
+    <div>
       <p className={styles.title_about_me}>Academic record</p>
+      <div className={styles.div_container}>
       <TableContainer component={Paper} className={styles.table_container}>
-        <Table aria-label="collapsible table" className={styles.div_certificates}>
+        <Table
+          aria-label="collapsible table"
+          className={styles.div_certificates}
+        >
           <TableHead>
             <TableRow className={styles.table_head}>
               <TableCell />
@@ -135,7 +130,8 @@ const Certificates: React.FC = () => {
           </TableBody>
         </Table>
       </TableContainer>
-    </body>
+      </div>
+    </div>
   );
 };
 

@@ -14,28 +14,28 @@ const Projects: React.FC = () => {
       id: 1,
       image: "/marvel.png",
       title: "Marvel Comics",
-      descricao:"",
+      descricao: "",
       frontend: "https://github.com/KalyanaGreim/marvel-comics",
     },
     {
       id: 2,
       image: "/form_multietapas.png",
       title: "Formulário Multi Etapas",
-      descricao:"",
+      descricao: "",
       frontend: "https://github.com/KalyanaGreim/Formul-rio-em-etapas",
     },
     {
       id: 3,
       image: "/mmo.png",
       title: "MMO",
-      descricao:"",
+      descricao: "",
       frontend: "https://github.com/KalyanaGreim/DEVinMMO",
     },
     {
       id: 4,
       image: "/devin.png",
       title: "DEV in Hortifruti",
-      descricao:"",
+      descricao: "",
       frontend:
         "https://github.com/DEVin-Involves-PariPassu/M3P2-DEVinHortifruti-FrontEnd",
       backend:
@@ -45,39 +45,52 @@ const Projects: React.FC = () => {
       id: 5,
       image: "/lepice.png",
       title: "Lepice Bistrô",
-      descricao:"",
+      descricao: "",
       frontend: "https://github.com/KalyanaGreim/DevsFood",
     },
     {
       id: 6,
       image: "/",
       title: "Sistema de Vendas",
-      descricao:"",
+      descricao: "",
       backend: "https://github.com/KalyanaGreim/sistema-de-vendas",
     },
     {
       id: 7,
       image: "/",
       title: "Jogo RPG",
-      descricao:"",
+      descricao: "",
       backend: "https://github.com/KalyanaGreim/GameRPG_Projeto3",
     },
     {
       id: 8,
       image: "/sgi.png",
       title: "SGI",
-      descricao:"",
-      frontend: "https://github.com/KalyanaGreim/FRONTEND_SGI---Sistema-de-Gestao-Integrada",
+      descricao: "",
+      frontend:
+        "https://github.com/KalyanaGreim/FRONTEND_SGI---Sistema-de-Gestao-Integrada",
     },
   ];
   return (
     <section>
       <p className={styles.title_about_me}>My Recent Projects</p>
-      <p className={styles.subtitle_projects}>Para ver todos os projetos <a style={{fontWeight: 'bold'}} href="https://github.com/KalyanaGreim">clique aqui</a> </p>
+      <p className={styles.subtitle_projects}>
+        Para ver todos os projetos{" "}
+        <a
+          style={{ fontWeight: "bold" }}
+          href="https://github.com/KalyanaGreim"
+        >
+          clique aqui
+        </a>{" "}
+      </p>
       <div className={styles.portfolio_container}>
         {data.map(({ id, image, title, frontend, backend, descricao }) => {
           return (
-            <Card sx={{ width: 500, marginRight: "10px" }} key={id} className={styles.portfolio_item}>
+            <Card
+              sx={{ width: 500, marginRight: "10px" }}
+              key={id}
+              className={styles.portfolio_item}
+            >
               <CardHeader
                 title={title}
                 // subheader="06/2013 a 02/2021 - Radiologia Campo Largo"
@@ -99,21 +112,26 @@ const Projects: React.FC = () => {
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
-                { frontend && <a href={frontend} className="btn" target="noopener noreferrer"> 
-                <Button variant="outlined" style={{marginRight: '4px'}}>Front-end</Button>                  
-                </a>}
+                {frontend && (
+                  <a
+                    href={frontend}
+                    className="btn"
+                    target="noopener noreferrer"
+                  >
+                    <Button variant="outlined" style={{ marginRight: "4px" }}>
+                      Front-end
+                    </Button>
+                  </a>
+                )}
                 {backend && (
                   <a
                     href={backend}
                     className="btn btn-primary"
                     target="noopener noreferrer"
                   >
-                    <Button variant="contained">Back-end</Button>                      
+                    <Button variant="contained">Back-end</Button>
                   </a>
                 )}
-                {/* <Button>
-                  <ExpandMoreIcon />
-                </Button> */}
               </CardActions>
             </Card>
           );
