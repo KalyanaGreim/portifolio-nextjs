@@ -271,7 +271,7 @@ const About: React.FC = () => {
                 operação com entidades. <br />
                 - Criação de scripts e consulta no banco de dados MySQL; <br />{" "}
                 - Criação de imagem Docker; <br />
-                - Contato diário com git, criação de PR's e realização de Code
+                - Contato diário com git, criação de PR e realização de Code
                 Review; <br />
                 - Implementação de trackeamento das interações do usuário (data
                 analytics); <br />- Metodologias ágeis: Criação, refinamento e
