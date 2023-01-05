@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -129,7 +129,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -252,7 +252,6 @@
     );
     z-index: 1;
   }
-
 }
 .about {
   min-height: 80vh;
@@ -261,7 +260,6 @@
   /* background-color: rgb(144, 202, 249);
   border-radius: 0px 50px 0px 50px; */
   padding: 20px;
-
 }
 .title_about_me {
   margin: 10px 30px 10px 30px;
@@ -281,15 +279,20 @@
   margin: 20px;
 }
 .contact {
-  min-height: 80vh;
-  margin: 80px;
+  width: 100vw;
+  height: 80vh;
+  /* background: rgb(248, 252, 255); */
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  
+  align-items: center;
 }
 .title_contact {
   border-bottom: 4px solid rgb(144, 202, 249);
   font-family: cursive;
   font-size: 35px;
+  float: none;
+  margin: 30px 30px 0px 30px;
 }
 
 /* Tablet and Smaller Desktop */
@@ -350,7 +353,9 @@
 }
 .table_head {
   background-color: rgb(144, 202, 249);
-  color: white;
+}
+.div_container {
+  background-color: rgb(248, 252, 255);
 }
 .table_container {
   padding: 30px;
