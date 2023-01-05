@@ -275,8 +275,8 @@
 }
 .list_cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px;
 }
 .contact {
   width: 100vw;
@@ -361,7 +361,11 @@
 }
 .table_container {
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 .div_certificates {
   min-height: 70vh;
+  min-width: 100vh;
 }

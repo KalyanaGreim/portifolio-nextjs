@@ -64,7 +64,7 @@ const About: React.FC = () => {
       </div>
       <div className={styles.list_cards}>
         <Card
-          sx={{ width: 500, marginRight: "10px" }}
+          sx={{ maxWidth: 400, margin: "10px" }}
         >
           <CardHeader
             avatar={<Avatar aria-label="recipe" sx={{ bgcolor: blue[200] }}>1</Avatar>}
@@ -138,7 +138,7 @@ const About: React.FC = () => {
           </Collapse>
         </Card>
         <Card
-          sx={{ width: 500, marginRight: "10px" }}
+          sx={{ maxWidth: 400, margin: "10px" }}
         >
           <CardHeader
             avatar={<Avatar aria-label="recipe" sx={{ bgcolor: blue[200] }}>2</Avatar>}
@@ -215,7 +215,7 @@ const About: React.FC = () => {
             </CardContent>
           </Collapse>
         </Card>
-        <Card sx={{ width: 500 }}>
+        <Card sx={{ maxWidth: 400, margin: "10px" }}>
           <CardHeader
             avatar={<Avatar aria-label="recipe" sx={{ bgcolor: blue[200] }}>3</Avatar>}
             action={

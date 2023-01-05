@@ -93,7 +93,7 @@ const Projects: React.FC = () => {
         {data.map(({ id, image, title, frontend, backend, descricao }) => {
           return (
             <Card
-              sx={{ width: 500, marginRight: "10px" }}
+              sx={{ width: 500, margin: "10px" }}
               key={id}
               className={styles.portfolio_item}
             >
