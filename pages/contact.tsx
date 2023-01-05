@@ -20,10 +20,17 @@ const Contact: React.FC = () => {
   return (
     <div>
       <div className={styles.title_pages}>
-        <IconButton aria-label="back" href="/" style={{background: 'rgb(144, 202, 249)', margin: '0px 0px 10px 0px'}}>
+        <IconButton
+          aria-label="back"
+          href="/"
+          style={{
+            background: "rgb(144, 202, 249)",
+            margin: "0px 0px 10px 0px",
+          }}
+        >
           <ChevronLeft />
         </IconButton>
-        <p>Informações de contato </p>
+        <p>Contact information</p>
       </div>
       <div className={styles.contact}>
         <List

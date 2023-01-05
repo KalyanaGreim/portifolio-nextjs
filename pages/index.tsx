@@ -17,17 +17,23 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-        <a href="/cv.pdf" download className='btn'><p>
-            Download CV
-          </p></a>          
-          <div style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)', fontSize: 16}}>
+          <a href="/cv.pdf" download className="btn">
+            <p>Download CV</p>
+          </a>
+          <div
+            style={{
+              fontWeight: "bold",
+              color: "rgb(144, 202, 249)",
+              fontSize: 16,
+            }}
+          >
             {/* <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             > */}
-              FullStack Developer Jr
-              {/* <Image
+            FullStack Developer Jr
+            {/* <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
@@ -38,7 +44,7 @@ export default function Home() {
             {/* </a> */}
           </div>
         </div>
-        <div className={styles.center }>
+        <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/perfil_kaly.jpeg"
@@ -46,20 +52,37 @@ export default function Home() {
             width={220}
             height={220}
             priority
-          /> 
+          />
         </div>
-        <div className={styles.center}>
-          <h2>Hello world, I'm Kaly</h2> 
+        <div className={styles.center} style={{ marginTop: "25px" }}>
+          <h2>Hello world, I'm Kaly</h2>
           <div className={styles.thirteen}>
             <h1>:)</h1>
-          </div>           
+          </div>
         </div>
-        <p style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)'}}>Frontend Development</p>
-          <p style={{margin: '0px 0px 15px 0px'}}>
-            HTML - CSS - Javascript - React - NextJs - Bootstrap - MaterialUi{" "}
-          </p>
-        <p style={{fontWeight: 'bold', color: 'rgb(144, 202, 249)'}}>Backend Development</p>
-        <p style={{margin: '0px 0px 30px 0px'}}>Java - SpringBoot - TDD - PostgreeSQL - MySQL - Docker - AWS(S3) </p>
+        <div style={{ display: "flex", justifyContent: "space-around"}}>
+          <div style={{ marginRight: "10px", textAlign: "center", paddingRight: '10px' }}>
+            <p style={{ fontWeight: "bold", color: "rgb(144, 202, 249)" }}>
+              Frontend Development
+            </p>
+            <p style={{ margin: "0px 0px 15px 0px" }}>
+              HTML - CSS - Javascript - React - NextJs - Bootstrap - MaterialUi{" "}
+            </p>
+          </div> 
+          <div style={{ textAlign: "center", marginLeft: '10px', paddingLeft: '10px' }}>
+            <p
+              style={{
+                fontWeight: "bold",
+                color: "rgb(144, 202, 249)",
+              }}
+            >
+              Backend Development
+            </p>
+            <p style={{ margin: "0px 0px 30px 0px" }}>
+              Java - SpringBoot - TDD - PostgreeSQL - MySQL - Docker - AWS(S3){" "}
+            </p>
+          </div>
+        </div>
         <div className={styles.grid}>
           <Link
             href="/experience"
