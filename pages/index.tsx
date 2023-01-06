@@ -60,16 +60,28 @@ export default function Home() {
             <h1>:)</h1>
           </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-around"}}>
-          <div style={{ marginRight: "10px", textAlign: "center", paddingRight: '10px' }}>
+        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          <div
+            style={{
+              marginRight: "10px",
+              textAlign: "center",
+              paddingRight: "10px",
+            }}
+          >
             <p style={{ fontWeight: "bold", color: "rgb(144, 202, 249)" }}>
               Frontend Development
             </p>
             <p style={{ margin: "0px 0px 15px 0px" }}>
               HTML - CSS - Javascript - React - NextJs - Bootstrap - MaterialUi{" "}
             </p>
-          </div> 
-          <div style={{ textAlign: "center", marginLeft: '10px', paddingLeft: '10px' }}>
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+              marginLeft: "10px",
+              paddingLeft: "10px",
+            }}
+          >
             <p
               style={{
                 fontWeight: "bold",
@@ -85,6 +97,19 @@ export default function Home() {
         </div>
         <div className={styles.grid}>
           <Link
+            href="/certificates"
+            className={styles.card}
+            // target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              Graduation and certificates <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              My main formations and what I'm studying now.
+            </p>
+          </Link>
+          <Link
             href="/experience"
             className={styles.card}
             // target="_blank"
@@ -96,20 +121,6 @@ export default function Home() {
             <p className={inter.className}>
               My trajectory in the IT area and my professional experience
               history.
-            </p>
-          </Link>
-
-          <Link
-            href="/certificates"
-            className={styles.card}
-            // target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Graduation and certificates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              My main formations and what I'm studying now.
             </p>
           </Link>
 
