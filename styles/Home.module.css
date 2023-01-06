@@ -15,7 +15,7 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  /* font-family: var(--font-mono); */
+  font-family: var(--font-mono);
 }
 
 .description a {
@@ -29,9 +29,9 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  /* background-color: rgba(var(--callout-rgb), 0.5);
+  background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius); */
+  border-radius: var(--border-radius);
 }
 
 .code {
@@ -101,7 +101,7 @@
   left: 50%;
   position: absolute;
   filter: blur(45px);
-  /* transform: translateZ(0); */
+  transform: translateZ(0);
 }
 
 .logo {
@@ -308,8 +308,6 @@
   .vercelLogo {
     filter: invert(1);
   }
-
-  .logo,
   .thirteen img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
