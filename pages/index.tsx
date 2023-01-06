@@ -44,7 +44,7 @@ export default function Home() {
             {/* </a> */}
           </div>
         </div>
-        <div className={styles.center}>
+        <div>
           <Image
             className={styles.logo}
             src="/perfil_kaly.jpeg"
